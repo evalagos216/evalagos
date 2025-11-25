@@ -28,6 +28,32 @@
             margin-top: 10px;
             font-weight: 800;
         }
+      .verified-badge {
+    display: inline-block;
+    margin: 20px auto 30px; /* espacio arriba y abajo */
+    background: #00e676;
+    color: #041B2D;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px #00e676, 0 0 40px #00e676, 0 0 60px #00ff88;
+    text-shadow: 0 0 10px #ffffff;
+    animation: glow 1.5s infinite alternate;
+    text-align: center;
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 20px #00e676, 0 0 40px #00e676, 0 0 60px #00ff88; }
+    to { box-shadow: 0 0 30px #00e676, 0 0 60px #00e676, 0 0 80px #00ff88; }
+}
+
+
+@keyframes glow {
+    from { box-shadow: 0 0 20px #00e676, 0 0 40px #00e676, 0 0 60px #00ff88; }
+    to { box-shadow: 0 0 30px #00e676, 0 0 60px #00e676, 0 0 80px #00ff88; }
+}
+
 
         .bonus-card {
             padding: 0;
@@ -136,12 +162,15 @@
 <body>
 
     <div class="container">
+        <div class="verified-badge">✅ PAGINA VERIFICADA</div>
 
         <h1 class="title">🎰 ATLANTIS</h1>
+        
 
         <div class="bonus-card">
             <img src="NOBO.jpeg" alt="Reclama tu bono">
         </div>
+        
 
         <a class="whatsapp-button"
             href="https://wa.me/541176111655?text=Hola%2C%20quiero%20duplicar%20mi%20carga"
